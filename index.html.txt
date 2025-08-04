@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📦 一鍵更新採購建議</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    button { font-size: 20px; padding: 10px 20px; border-radius: 10px; }
+    #msg { margin-top: 20px; font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <h2>📦 MUSE 採購系統</h2>
+  <button onclick="trigger()">🔁 一鍵更新</button>
+  <p id="msg"></p>
+
+  <script>
+    function trigger() {
+      fetch("https://script.google.com/macros/s/【請替換成你的WebApp網址】/exec")
+        .then(res => res.text())
+        .then(msg => document.getElementById("msg").textContent = msg)
+        .catch(err => alert("⚠️ 執行錯誤：" + err));
+    }
+  </script>
+</body>
+</html>
