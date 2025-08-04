@@ -16,7 +16,7 @@
 
   <script>
     function trigger() {
-      fetch("https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbyz_9nSpxk5jQGao1OH-9FYtFJ5G8h8UVBI07h2teSA3-YnecCEpyKTMnaTtEnlaU2adQ/exec")
+      fetch("https://script.google.com/macros/s/AKfycbyz_9nSpxk5jQGao1OH-9FYtFJ5G8h8UVBI07h2teSA3-YnecCEpyKTMnaTtEnlaU2adQ/exec")
         .then(res => res.text())
         .then(msg => document.getElementById("msg").textContent = msg)
         .catch(err => alert("⚠️ 執行錯誤：" + err));
@@ -24,4 +24,5 @@
   </script>
 </body>
 </html>
+
 
